@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RG</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+<body>
+    <header>
+        <h2>Rodrigo Godoy</h2>
+     
+                <li><a href="#skills"> Aptitudes</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#redes">Redes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            
+       
+
+    </header> 
+    <!-- section uno, foto  y presentancion -->
+    <section class="uno">
+        <div>
+        <img class="foto" src="mifoto.jpeg" alt="Foto de Rodri">            
+    </div> 
+    <div class="fondo-presentacion">
+        <div>
+        <h1>Hola!!</h1>
+        <p>
+            Soy Rodrigo Godoy, violinista apasionado y entusiasta de la tecnología. 
+            Me encanta combinar la creatividad del arte con la lógica del desarrollo, 
+            siempre buscando aprender.
+        </p>
+    </div>
+
+    </div>  
+    </section>
+
+
+    <!--sobre mi-->
+    <section class="dos">
+        <h2>Sobre Mi</h2>
+        <div>
+        <p>
+            Soy violinista profesional con experiencia en diversas orquestas de mi provincia,
+            donde tuvo el privilegio de interpretar y compartir la magia de la música con diferentes públicos. 
+            Además de mi amor por el arte, tengo un interés creciente por la programación, 
+            un mundo donde puedo canalizar mi creatividad y lógica para resolver problemas y crear soluciones innovadoras, 
+            disfrutar de enfrentar desafíos, ya sea en el escenario perfeccionando una 
+            interpretación o desarrollando proyectos frente a un teclado.
+        </p>
+    </div>
+
+        <div id="skills"></div>
+        <h2>Aptitudes</h2>
+        
+        <div class="aptitudes">
+        <p>
+           Estas son algunas de las tecnologias que conozco:
+        </p>
+    </div>
+
+        <div class="tech-list">
+            <img src="https://i.blogs.es/8d2420/650_1000_java/450_1000.webp" class="tech" alt="">
+            <img src="https://w7.pngwing.com/pngs/713/936/png-transparent-spring-framework-representational-state-transfer-java-api-for-restful-web-services-microservices-others-text-trademark-logo.png" class="tech" alt="">
+            <img src="https://w7.pngwing.com/pngs/203/560/png-transparent-github-logo.png" class="tech" alt="">
+            <img src="https://w7.pngwing.com/pngs/240/85/png-transparent-c.png" class="tech" alt="">
+          </div>
+          <div>
+        <h2>Cursos realizados</h2>
+        <ul>
+            <li>Java para Principiantes</li>
+            <li>Programación Orientada a Objetos con Java</li>
+            <li>Desarrollo de APIs en Java con Spring Boot</li>
+            <li>Java Web con JSP y JPA</li>
+        </ul>
+    </div>
+</section>
+
+<!--mis proyectos con imagenes-->
+<div id="projects"></div>
+<section class="tres">
+<h2>Mis proyectos</h2>
+
+    <h3>Mi repositorio de github</h3>
+            <a href="https://github.com/RodrigoGodoy92" target="_blank"><img src="https://pngimg.com/uploads/github/github_PNG23.png" class="tech" alt=""></a>
+</section>
+
+<div id="contacto"></div>
+<h2>Contacto:</h2>
+<hr>
+<div>
+    <form id="contactForm" action="/submit" method="post">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea type="message" id="message" name="message" rows = "4" cols="50" placeholder="Type your message" required></textarea>
+        <button type="submit" onclick="buttonMessage()">Send</button>
+    </form>
+</div>
+<hr>
+<script>
+    function buttonMessage(){
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+
+        if (name === "" || email === "" || message === "") {
+            alert("Please fill out all fields.");
+            return false;
+        }
+        return true;
+        alert("Form Sended!");
+    }
+</script>
+
+</div>
+
+<!--aca ponemos redes de contacto-->
+<footer class="footer">
+    <div id="redes"></div>
+    <h2>Mis Redes:</h2>
+    <hr>
+    <a href="https://github.com/RodrigoGodoy92" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="tech" alt=""></a>
+    <a href="https://www.linkedin.com/in/rodrigo-godoy-backend-dev/" target="_blank"><img src="https://blakeoliver.com.au/wp-content/uploads/2023/06/vecteezy_linkedin-logo-png-linkedin-icon-transparent-png_18930585_835.png" class="tech" alt=""></a>
+    <hr>
+</footer>
+
+    
+  
+</body>
+</html>
